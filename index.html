@@ -1,0 +1,32 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>ScratchIt Test Suite</title>
+    <!-- Load local jQuery. -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- Load local QUnit. -->
+    <link rel="stylesheet" href="scratchit.css" media="all" />
+
+
+    <!-- Load local lib and tests. -->
+    <script src="scratchit.js"></script>
+
+
+  </head>
+  <body>
+
+    
+    <div class="scratchit">
+		<img src="dp.jpg" width="400" height="200" />
+      <canvas width="400" height="200"></canvas>
+    </div>
+    
+    <script>
+     $(function() {
+        var $scratchit = $('.scratchit').scratchIt();
+      });
+
+    </script>
+  </body>
+</html>
